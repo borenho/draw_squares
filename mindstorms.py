@@ -21,25 +21,27 @@ def draw_art():
 	brad.shape("turtle")
 	brad.color("green")
 	brad.speed(3)
-	# Call brad
-	draw_square(brad)
+	# Call brad and turn him a little bit to the right in the next iteration
+	for i in range(36): # Iterate 36 times to make for 360 degrees
+		draw_square(brad)
+		brad.right(10)
 
 	# Create turtle angie to draw circle
-	angie = turtle.Turtle()    # Instantiate brad
-	# Customize angie
-	angie.shape("arrow")
-	angie.color("grey")
-	angie.speed(5)
-	angie.circle(100)
+	# angie = turtle.Turtle()    # Instantiate brad
+	# # Customize angie
+	# angie.shape("arrow")
+	# angie.color("grey")
+	# angie.speed(5)
+	# angie.circle(100)
 
-	# Create turtle croco to draw triangle
-	croco = turtle.Turtle()    # Instantiate croco
-	# Customize croco
-	croco.shape("arrow")
-	croco.color("blue")
-	croco.speed(3)
-	# Call croco
-	draw_triangle(croco)
+	# # Create turtle croco to draw triangle
+	# croco = turtle.Turtle()    # Instantiate croco
+	# # Customize croco
+	# croco.shape("arrow")
+	# croco.color("blue")
+	# croco.speed(3)
+	# # Call croco
+	# draw_triangle(croco)
 	
 
 	window.exitonclick()
